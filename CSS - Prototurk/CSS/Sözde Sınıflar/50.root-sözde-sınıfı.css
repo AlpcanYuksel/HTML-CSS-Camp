@@ -1,0 +1,14 @@
+/*root: etiketlerdeki en kök elemanı seçmek için kullanılıyor. html etiketini bile ezer, yani sayfanın stilinin en baş elemanıdır.  */
+
+
+:root{
+    background-color: red;
+}
+
+html{
+    background-color: teal;
+}
+
+body{
+    background-color: lime;
+}

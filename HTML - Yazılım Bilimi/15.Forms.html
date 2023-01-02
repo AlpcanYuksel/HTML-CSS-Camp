@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form ve Inputs</title>
+</head>
+<body>
+
+    <!--Html form etiketlerinin görevi, <form> ... </form> etiketleri içinde bulunan html kontrolleri aracılığıyla kullanıcılardan toplanan bilgileri server'a göndermektir.-->
+    <!--<label> etiketi <input> etiketi için bir başlık tanımlar.Label etiketine tıklandığında (for ile id eşitlendiğinde) giriş alanındaki kontrol değişir, kullanıcılar için kolaylık sağlar.Label etiketinin for özelliği ile <input> etiketinin id özellikleri eşitlenmelidir.-->
+    
+     <!--Input name attribute özelliği, submit butonu ile php tarafında name'i yakalamak için kullanılır (hangi özelliği göndericeksek o özellik name'de yakalanmalı) -->
+
+    <!--input type="radio", tek bir seçeneğin seçilmesi gerektiği durumlarda kullanılır. her radio'nun name alanları aynı olmak zorundadır. checked attribute'u seçili olarak glmesine olanak sağlar-->
+    <!--input type="checkbox", birden fazla seçeneğin seçilebileceği durumlarda kulanılır. -->
+    <!--Select: Liste şeklinde birkaç seçenek sunmaya yarar. sadece tek bir seçenek seçilebilir. selected attribute'u seçili gelecek seçeneğin yanına eklenir. option, select listin her bir değerini göstermek için kullanılır.-->
+    <!--textarea: Sayfamızda mesaj kutusu tanımlamamıza yarar. placeholder attribute'u bilgi yazısını ekranda yazar.-->
+    
+
+    <!-- <button type="submit">Gönder</button> submit butonu böyle de oluşturulabilir -->
+
+    <form>
+        <!--HTML5 Input-->
+        <label for="name">Name</label> <br>
+        <input type="text" id="name" name="name" placeholder="name"> <br>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" placeholder="email"> <br>
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" name="password" placeholder="password"> <br>
+        <label for="tarih">Tarih</label> <br>
+        <input type="date" id="tarih" name="date"> <br> <br>
+        
+        Gender <br>
+        Male
+        <input type="radio" name="gender" value="male" checked>
+        Female
+        <input type="radio" name="gender" value="female"> 
+        Other
+        <input type="radio" name="gender" value="other"><br> <br>
+
+        Hobbies <br>
+        Tech
+        <input type="checkbox" id="tech" name="tech" checked>
+        Music
+        <input type="checkbox" id="music" name="music">
+        Art
+        <input type="checkbox" id="art" name="art"> <br> <br>
+
+        Degree <br>
+
+        <select name="degree" id="degree">
+            <option value="bachelor" selected>Lisans</option>
+            <option value="msc">Yüksek Lisans</option>
+            <option value="phd">Doktora</option>
+        </select><br>
+
+        <textarea name="mesaj" id="message" rows="10" cols="30" placeholder="Your Message"></textarea>
+
+        <br><br>
+        <input type="submit" value="Kaydet">
+        <input type="reset" value="Sıfırla"> <br><br>
+
+        <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" title="w3schools html_forms">Daha fazlası için tıklayınız</a>
+        
+        
+        
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>

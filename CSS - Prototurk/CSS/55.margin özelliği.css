@@ -1,0 +1,46 @@
+/*margin: padding gibi boşluk veriyor ancak padding iç boşlukken, margin dış boşluk veriyor.*/
+
+
+
+/*
+div {
+    background-color: lime;
+    margin: 50px 100px 70px 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+*/
+
+/*margin'de padding'e göre farklılıklar vardır. örneğin negatif değer kullanabiliriz. margin top ve left - li değerler alarak ilk div'i etkilerken buttom ve right ilk değeri etkileyemez. ikinci divi ilkdivin üstüne bindirir*/
+
+/*    float: left; divleri yan yana getirir fakat tehlikelidir. yeni gelecek etiketler de soldan sağa doğru dizilir*/
+
+/*right ve left özelliklerine auto değeri atadığımızda sağdan ve soldan sayfayı ortalıyor ve sayfanın çözünürlüğü kaç olursa olsun otomatik olarak kendini ortalıyor (responsive)*/
+
+div {
+    background-color: lime;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*top ve bottom işe yaramaz, left ve right çalışır.*/
+
+span{
+    background-color: red;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-right: 100px;
+
+
+    
+}
+
+

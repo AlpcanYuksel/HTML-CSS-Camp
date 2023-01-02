@@ -1,0 +1,33 @@
+/*first-child Sözde Sınıfı: İlk li etiketinin arkaplan rengini sarı yapar.Dikkat etmemiz gereken li'lerin ebeveyni ul olmalıdır.Yani ilk çocuk li'yi alır.*/
+
+.list li:first-child{
+    background-color: yellow;
+}
+
+/*divlerin içerisindeki ilk ul'yi seç ve arkaplanı kırmızı yap.*/
+div ul:first-child{
+    background-color: red;
+}
+
+/*ilk çocuk etiket div ise seç ve arkaplan rengini yeşil yap. Eğer ki body etiketinin ilk çocuk etiketi div değil ise arkaplanı yeşil yapmaz!. Çünkü body'nin ilk ebeveyni div değil, paragraf etiketidir. Yani burada ebeveyn çok önemli .*/
+div:first-child{
+    background-color: green;
+}
+
+
+
+/*last-child Sözde Sınıfı: son li etiketini alır ve arkaplan rengini değiştirir*/
+
+ul.list2 li:last-child{
+    background-color: brown;
+}
+
+mark{
+    background-color:black ;
+    color: white;
+    text-align: center;
+}
+
+ul.list2:last-child{
+    background-color: cornflowerblue;
+}

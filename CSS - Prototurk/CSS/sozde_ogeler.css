@@ -1,0 +1,93 @@
+div{
+    background-color: yellow;
+}
+
+/*Sözde öğelerin kullanım alanı, örneğin açılır bir menü var ve üzerinde imleç ile gelindiğinde ok işareti beliriyor.işte bunları sözde öğeler ile yapıyoruz*/
+
+/*After Sözde Öğesi: Div etiketi içerisindeki yazı,etiket vea herhangi bir şeyden sonrasında 'sonraki yazı' sözcüklerini ekrana yazdırır. */
+
+.div::after{
+    content: ' sonraki yazı içeriği';
+}
+
+/* yazı ve arkaplan rengini değiştirdiğimizde, sadece after etiketi ile sonradan eklenen yazı etkilenir. */
+.box::after{
+    content: 'box classı alanların sonraki yazı içeriği';
+    color: red;
+    background: blue;
+}
+
+/*Before Sözde Öğesi*/
+
+.box::before{
+    content: 'Önceki Yazı içeriği';
+    color: blue;
+    background: aqua;
+}
+
+/*attr() Fonksiyonu: content içeriğinde tanımlanıp, parametre olarak niteliği alır ve nitelik değerini ekranda gösterir. */
+
+.box2::before{
+    content: attr(title);
+    color: blue;
+    background: aqua;
+}
+
+
+.box3::before{
+    content: attr(data-oncesi);
+    color: blue;
+    background: aqua;
+}
+.box3::after{
+    content: attr(data-sonrasi);
+    color: red;
+    background: rgb(151, 229, 151);
+}
+
+
+a[target="_blank"]::after{
+    content: '('attr(href) ')';
+    color: red;
+}
+
+/*first-letter Sözde Öğesi: Yazının ilk harfine istediğimiz değşikliği yapar.Genelde haber sitelerinde yazının baş harfini büyütmek için kullanılır*/
+.fontSize {
+    font-size: 30px;
+}
+
+p::first-letter{
+    font-size: 60px;
+}
+
+/*first-line Sözde Öğesi: Yazının ilk cümlesini seçip, istediğimiz değişiklikleri uygular */
+
+p::first-line{
+    background-color: red;
+}
+
+/*Selection Sözde Öğesi: Web sayfasında kullanıcı tarafından seçilen sözcüğün arkaplan rengini değiştirir.*/
+
+p::selection{
+    background-color: yellow;
+    color: white;
+}
+
+/*placeholder Sözde Öğesi: placeholder niteliği, text'in içerisi boş ise bilgilendirme mesajı verir. placeholder sözde öğersi ise, placeholder üzerinde çeşitli css işlemleri yapmamıza yarar*/
+
+input::placeholder{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+textarea::placeholder{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/*Bütün place holder'lar için,*/
+
+::placeholder{
+    color: chartreuse;
+}

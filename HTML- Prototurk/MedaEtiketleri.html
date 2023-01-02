@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Resim ve Video Etiketleri</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <mark>Audio Etiketi mp3 dosyalarımız için oluşturulur. controls, mp3 controlünü sayfaya ekler. loop, şarkı bittiğinde tekrar oynatılmasını sağlar(döngü). muted, sayfaya ilk girişte oynatıcıyı sessiz olarak başlatır. Video etiketi içersinde track etiketi, altyazı ekler(fakat sunucu üzerinde çalıştırabilirz. localde çalışmaz).</mark>
+        <br><br><br><br> 
+        <audio controls loop muted>
+            <source src="../audio/cat-dealers-pump-it-8d-bass-boosted.mp3" type="audio/mpeg">
+            Tarayıcınız bu formatı desteklemiyor.
+        </audio>
+        <br><br>
+
+        <video controls loop muted width="800px" height="500px" poster="../images/WhatsApp Image 2022-09-25 at 19.06.06.jpeg">
+            <source src="../videos/A.R.O.G - Türk Komedi Filmi Tek Parça.mp4" type="video/mp4" >
+            <track src="" kind="subtitles" srclang="en" label="İngilizce">
+            Tarayıcınız bu formatı desteklemiyor.
+        </video>
+    
+    </body>
+</html>

@@ -1,0 +1,41 @@
+/* hover: imleç ile üzerinde gelindiğinde renginin değişmesi. Çok fazla kullanılır *** */
+
+ul li:hover{
+    background-color: blue;
+}
+
+div:hover{
+    background-color: chocolate;
+}
+
+div span:hover{
+    background-color: plum;
+}
+
+button:hover + ul{
+    display: none;
+}
+
+p::selection{
+    background-color: lime
+}
+
+p:hover::selection{
+    background-color: rebeccapurple;
+}
+
+.url::after{
+    content: ' (' attr(href) ')';
+}
+
+.url:hover::after{
+    display: none;
+}
+
+a:hover{
+    background-color: red;
+}
+
+a:hover::selection{
+    background-color: rebeccapurple;
+}

@@ -1,0 +1,18 @@
+/*tipi number olan inputumuzda aralık(range) verdiğimizde kullanacağımız sözde sınıflardır.*/
+
+
+/*valid ve invalid ile de çalışır** */
+
+/*input değer aralığında bir sayı iken arkaplan rengini yeşil yapar.*/
+
+input:in-range{
+    background-color: green;
+    color: white;
+}
+
+/*input değer aralığı dışında bir sayı iken arkaplan rengini kırmızı yapar.*/
+input:out-of-range{
+    background-color: red;
+    color: white;
+
+}

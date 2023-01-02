@@ -1,0 +1,31 @@
+/*checked Sözde Sınıfı: inputun type'ı checkbox veya radio olduğunda, seçtiğimiz değere stil işlemi uygulaması yapılır.*/
+
+
+/*input'un type=radio olanlar checked edildiğinde, yani seçildiğinde, "kardeş seçici (+)" ile yani hemen sonrasında gelen span etiketinin rengini kırmızı yap.*/
+input[type="radio"]:checked + span{
+    color: red;
+
+}
+
+
+/*inputun tipi checkbox olan, check olduğunda, hemen sonraki gelen box class'ını almış div etiketini görünmez yap*/
+
+
+.checkbox:checked ~ div.box{
+    display: none;
+}
+
+
+.button::before{
+    content: attr(data-hide);
+    color: white;
+    background-color: red;
+}
+
+
+.checkbox:checked + .button::before{
+    content: attr(data-show);
+    color: white; 
+    background-color: green;
+
+}

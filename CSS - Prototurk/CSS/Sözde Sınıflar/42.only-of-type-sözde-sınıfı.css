@@ -1,0 +1,5 @@
+/*only-of-type: div etiketi içerisinde birkaç farklı etiket bulunduğu durumlarda, içerisinde child olarak "tek bir div bulunuyorsa" stil işlemini uygular.*/
+
+.box div:only-of-type{
+    background-color: yellow;
+}

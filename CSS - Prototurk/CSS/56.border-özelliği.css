@@ -1,0 +1,44 @@
+/*border: ketiketlere kenarlık vermemize yarayan özellik
+
+    border-style: kenarlıkların çizgilerine stil verir.
+    border-width: border'ın köşelerini kalınlaştırır.
+    border-color: kenarlığın rengini veri
+    border: yukarıdaki üçünü bir arada kullanmamıza yarar
+
+*/
+
+/*her bir border özelliği için, kendi içerisinde de top-right-bottom-left özellikleri de vardır. ayrıca her bir kenar için de ayrı ayrı dört farklı renk verebiliriz. örn: border-style-left, border-color:red green blue yellow */
+
+.box1{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border-style: solid dashed;
+    border-width: 10px;
+    border-color: transparent;
+    /*
+    border: 10px dashed white;
+    */
+}
+
+.box2{
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    border: 10px solid green;
+    border-top: 10px solid blue;
+    border-right: none;
+    
+}
+input:focus{
+    outline: none;
+    border-color: cornflowerblue;
+}
+
+input{
+    margin-bottom: 15px;
+    border: 3px solid #ddd;
+    
+}
+

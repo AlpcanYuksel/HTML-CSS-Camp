@@ -1,0 +1,35 @@
+/*Genelde form elemanlarıyla kullanılır.*/
+
+
+/*Tarayıcıdan kaynaklı, dış çerçeve izini siyah olmasını sağlayan outline özelliği, focus olunduğunda devre dışı bırakıldı*/
+:focus{
+    outline: none;
+}
+
+/*Butona ve inputa focus olunduğunda (tıklandığında) aşağıdaki stil işlemlerini uygular. */
+
+button:focus{
+    background-color: lime;
+    color: white;
+}
+
+/*border-color, köşelerin rengi*/
+input:focus{
+    color: red;
+    border-color: red;
+}
+
+/*div etiketine normal şartlarda focus olunamaz. Fakat "tabinbex" attribute değerini alırsa, tab ile gezinerek üstüne gelindiğinde focus işlemi uygulanabilir*/
+
+div:focus{
+    background-color: red;
+}
+
+/*focus-within sözde sınıfı: Etiketler arasında focus işlemi yaptığımız bir etiket varsa, onun ebeveynine stil işlemi uygulamak için kullanılır. Örn, ul ve li*/
+
+li:focus{
+    background-color: teal;
+}
+ul:focus-within{
+    background-color: yellow;
+}

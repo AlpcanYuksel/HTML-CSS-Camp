@@ -1,0 +1,147 @@
+h3{
+    color: red;
+}
+p{
+    color: black;
+}
+
+span{
+    color: cadetblue;
+}
+
+div{
+    color: blue;
+} 
+
+/*HTML id niteliğine atamak için #(diyez) ile tabımlarız. #'den önce hangi etikete atamak istiyorsak onu da özel olarak belirtebiliriz.
+ örn: h3#title*/
+#title{
+    color: yellow;
+}
+
+/*Class niteliğine atamak için . ile başlayıp adını veririz ve kullanmak istediğimiz etiketin class'ında tanımlarız. */
+.color-blue{
+    color: blue;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+/*Burada hem color-blue, hem de text-bold class'larını tanımlayıp, eğer her ikisini de alan bir html elementi var ise bunun rengini kırmızı yapıp, ayırt etmeye çalıştık. Eğer sadece paragraf etiketlernde aramak istersek de başına p koyabiliriz. veya herhangi bir etikette olur*/
+p.color-blue.text-bold{
+    color: red;
+}
+
+
+
+#paragraf2{
+    color: purple;
+}
+
+/*herhangi bir paragraf etiketi, color-blue ve text-bold class'larını ve paragraf2 id değerini alıyorsa onun rengini siyah yap  */
+p.color-blue.text-bold#paragraf2{
+    color: black;
+}
+
+/*Torun seçici: bir span elementinin içindeki herhangi bir elementin css kodlarının yazımına denir.*/
+
+span p  {
+    color: yellow;
+}
+/* torun seçici veya;*/
+
+.span .box{
+
+}
+/* torun seçici veya;*/
+.span *{
+
+}
+
+
+/*Çocuk seçici: > tür işareti b etiketinin, p etiketinin child'ı olmak zorunda niteliği taşır. yani p etiketi içerisinde örneğin span etiketi var ve bunun içinde em ve b etiketleri var. o zaman css kodu çalışmaz, çünkü direkt olarak çocuğu değildir. */
+
+p > b{
+    color: blue;
+}
+
+p > em {
+    color: red;
+}
+
+
+
+/*Bitişik Kardeş Seçici: h2'den sonra gelen paragrafı seç ve rengini kırmızı yap demek*/
+
+h2 + p{
+    color: red;
+}
+
+div + p span {
+    color: cadetblue;
+}
+
+
+/*Genel Kardeş seçici: h4'den sonra gelen tüm paragraf etiketleri demek, ul etiketi içerisindeki list2 class'ını alan li etiketinden sonraki tüm li'lerin rengini darkgoldenrod yap */
+
+h4 ~ p {
+    color: red;
+}
+
+ul li.list2 ~ li {
+    color: darkgoldenrod;
+}
+
+/*Nitelik Seçici:abbr etiketlerinin title niteliği olanların rengibi yeşil yap. */
+
+abbr[title] {
+    color: green;
+}
+/*veya */
+
+abbr.box[title] {
+    color: blue;
+}
+/*veya */
+
+img[alt] {
+    background:radial-gradient(black, transparent);
+}
+ /*Nitelik[değer] Seçici: Herhangi bir elementin niteliğinin değerine göre;*/
+
+ a[target="_blank"]{
+    color: chartreuse;
+ }
+
+ /*Nitelik~[değer]: Nitelik değeri içerisinde belirleiğimiz değer geçiyor olanların rengini değiştir.  */
+
+ abbr[title~="deger"] {
+    color: rgb(177, 32, 32);
+ }
+
+/*Nitelik |="deger" Seçici: Nitelik değerinin ya tamamı eşleşecek ya da başlangıç değerini (box-) olan etiketlerin arkaplan rengini değiştir. */
+
+div[class|="box"] {
+    background-color: yellow;
+}
+
+/*[nitelik ^="deger"] Seçici: Niteliğin değeri box ile başlıyor ise otomatik olarak arkaplan rengini değiştir.*/
+
+div[class^="box"] {
+    background-color: yellow;
+}
+/*[Nitelik $="deger"] Seçici: Niteliğin değeri box ile bitiyor ise arkaplan rengini değiştir: */
+
+div[class$="box"] {
+    background-color: crimson;
+}
+
+/*[Nitelik *="deger] Seçici: Niteliğin değerinin herhangi bir yerinde title değeri geçiyor ise arkaplan renrengini değiştir. */
+
+/*Nitelik seçicilerde büyük-küçük harf duyarlılığı vardır tüm nitelik css'lerinin sonuna i harfi bırakılması, bu duyarlılığı ortadan kaldırır*/
+
+div[class*="title" i]{
+    background-color: rgb(107, 150, 107);
+}
+

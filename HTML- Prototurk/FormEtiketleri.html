@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Form Etiketleri</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <mark>From etiketleri tek başına anlamsızdır. Bunu çoğu framework'de kullanırız***. action niteliği, form bilgilerinin nereye gönderileceğini belirleriz. method niteliği, post mu get olarak mı gönderilmeli diye belirtiriz.form içerisinde file tipinde input var ise enctype="multipart/form-data" değerini girmemiz gerekiyor</mark>
+        <br>
+        <br>
+
+        <mark>Input çeşitli tipler alır. text, normal yazı tipidir, password şifreler için kullanılır.File, dosya seçmek için kullanılır. checked otomatik olarak işaretli gelir. reset type'ı formu temizler. readonly kullanıcı tarafından değiştirilemez, sadece okunabilir. Bu değer input olarak çekebilmemize engel değildir. required, boş geçilemez alan demek. maxlength, maksimum karakter sayısını belirtir.  autocomplete="off", daha önce yazılan değerleri tekrar göstermez. Eğer input etiketine name niteliği belirtilmezse, database'de yakalanamaz.
+            field set, inputun etrafını sarar. legend, başlık belirtir. disabled kullanılamaz yapar.
+        </mark>
+        <br>
+        <br>
+
+        <form action="" method="get" enctype="multipart/form-data" id="form1">
+            <fieldset disabled>
+                <legend>Giriş Yap</legend>
+            <label for="adi">Kullanıcı Adı</label>
+            <input required minlength="3" id="adi" type="text" autocomplete="off" ><br>
+            <label for="sifre">Şifre</label>
+            <input  id="sifre" type="password" > <br>
+            <button type="submit">Giriş Yap</button>
+            </fieldset>
+
+
+            <br><br>
+            <label for="eposta">E-posta</label>
+            <input id="eposta" type="email" ><br><br>
+            <input type="number" min="5" max="15"><br>
+            <input type="url"><br>
+            <label for="file">Dosya seç</label>
+            <input id="file" type="file" multiple accept="image/*"><br><br>
+            <label>
+                <input  type="checkbox" checked>Kuralları kabul ediyorum
+            </label> <br>
+            <label>
+                <input  type="checkbox" checked>Kuralları kabul ediyorum 2
+            </label><br>
+            <label>
+                <input  type="radio" name="cinsiyet" value="erkek">Erkek
+            </label> 
+            <label>
+                <input  type="radio" name="cinsiyet" value="kadın">Kadın
+            </label> <br><br>
+            <input type="hidden" name="test" id="test"> 
+            <input type="submit" value="Gönder">
+            <input type="submit" formmethod="post" formtarget="_blank" value="Gönder 2">
+            <input type="reset" value="Sıfırla">
+            
+        </form>
+
+        <br><br><br>
+        <input type="color"> <br><br>
+        <input type="date"><br><br>
+        <input type="datetime-local"><br>
+        <input type="month"><br>
+        <input type="week"><br>
+        <input type="number" min="5" max="15"><br>
+        <input type="range" step="5"><br>
+        <input type="search" autofocus><br>
+        <input type="tel"><br>
+        <input type="time"><br>
+        <input type="url"><br> <br>
+
+
+
+        <mark>Burada bir input içerisinde liste tanımladık ve kullanıcını herhangi bir value değerini seçebiliyor. Eğer form etiketinin içerisinde değil ise form attribute'u içerisine, formun id değerini atıyoruz. Bunun için form'a da id niteliği atıyoruz. </mark>
+        <br><br>
+        <input list="diller" name="diller" form="form1"><br>
+        <datalist id="diller">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+        </datalist>
+        <br><br>
+
+
+        <mark>Select etiketi, tanımlanmış option'lar arasından seçim yapmamızı sağlar</mark>
+
+        <br><br>
+        <select name="dil[]" multiple size="8">
+            <optgroup label="Front-end yazılım dilleri">
+                <option value="css">CSS</option>
+                <option selected value="html">HTML</option>
+                <option value="js">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-end yazılım dilleri">
+                <option value="php">PHP</option>
+                <option selected value="Java">Java</option>
+                <option value="C#">C#</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <mark>Metinsel ifadeler almak için kullanılır</mark>
+        <br><br>
+        <textarea name="" id="abc" cols="80" rows="40"></textarea>
+        <button type="submit">Gönder</button>
+        <button type="reset">Reset</button>
+
+
+
+
+    </body>
+</html>

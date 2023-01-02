@@ -1,0 +1,86 @@
+/*
+input etiketleri için kullanılırlar,
+    :enabled
+    :disabled
+
+    :optional
+    :required
+
+    :read-only
+    :read-write
+
+*/
+
+/*giriş açık*/
+.input1:enabled{
+    background-color: yellow;
+}
+
+/*giriş kapalı*/
+.input1:disabled{
+    background-color: red;
+}
+
+/*opsiyonel doldurulur*/
+.input2:optional{
+    background-color: yellow;
+}
+
+/*doldrulması zorunlu alan*/
+.input2:required{
+    background-color: red;
+}
+
+/*Sadece okunabilir input */
+.input3:read-only{
+    background-color: yellow;
+}
+
+/*yazılabilir input*/
+.input3:read-write{
+    background-color: red;
+}
+
+p:read-write{
+    background-color: grey;
+}
+
+
+
+/*
+link etiketleri için kullanılırlar,
+
+    :active
+    :link
+    :visited
+    :any-link
+
+*/
+
+/*active: o an seçilmiş olan linki temsil eder. Tıklandığında rengini değiştirir*/
+
+.link1:active{
+    background-color: yellow;
+}
+
+
+/*Link: henüz ziyaret edilmemiş linkleri temsil eder.Henüz ziyaret edilmemiş linklerin rengini blue yapar*/
+
+.link2:link{
+    color: blue;
+}
+
+
+
+/*visited: ziyaret edilen linkleri temsil eder. Ziyaret edilen linklerin rengini gri yapar*/
+
+.link2:visited{
+    color: gray ;
+}
+
+
+/*any-link: geçerli a etiketlerine sahip linkleri temsil eder.a etiketinin href değeri var ise stil işlemi uygular. yoksa uygulanmaz*/
+
+nav a:any-link{
+    background-color: lime;
+}

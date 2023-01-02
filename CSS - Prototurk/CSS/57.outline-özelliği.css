@@ -1,0 +1,28 @@
+/*outline: border özelliği gibi yine çerçeve ekler, fakat border'dan farklı olarak, etiketin dışında çerçeve ekler, içeriden yer kaplamaz
+
+    outline-style
+    outline-width
+    outline-color
+    outline-offset: çerçeve ile etiket arasına mesafe koyar.
+    outline
+
+    outline özelliği, etiketten bağımsız hareket eder. Yani border-width değeri verdiğimiz etiketin genişlik ve yükseklik değerleri değişirken, outline-width'de bu durum gerçekleşmez.
+
+
+
+*/
+
+
+div{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: lime;
+    border: 10px solid tomato;
+
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: aqua;
+    outline-offset: 10px;
+
+}

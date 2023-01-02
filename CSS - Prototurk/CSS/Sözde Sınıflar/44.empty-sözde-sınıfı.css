@@ -1,0 +1,10 @@
+/*empt sözde sınıfı: İçi boş olan etiketlerin gizlenmesini sağlar. etiketin içerisinde boşluk olmaması gerekir.*/
+
+li:empty{
+    display: none;
+}
+
+/*id'si total olan etiketin içi boş değilse, ondan hemen sonra gelen ve class'ı loading-text olan etiketin displayini none yap*/
+#total:not(:empty) + .loading-text {
+    display: none;
+}

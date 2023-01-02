@@ -1,0 +1,10 @@
+/*Evrensel seçicidir. bu css'i alan her html sayfası, buradaki css özelliklerini de almış olur.*/
+/** {
+    color: pink;
+}
+*/
+
+/*Div etiketi içerisindeki tüm etiketleri pembe renk yap.*/
+div * {
+    color: pink;
+}

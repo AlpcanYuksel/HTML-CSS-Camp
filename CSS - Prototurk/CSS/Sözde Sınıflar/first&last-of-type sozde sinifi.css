@@ -1,0 +1,11 @@
+/*first of type sözde sınıfı: first ve last child gibi ilk veya son etiket olmadığı durumlarda verilen css özelliği çalışmıyordu. Fakat burada etiketin tipine bakarak ilk div etiketini seçip rengini sarı yapar. */
+
+div:first-of-type{
+    background-color: yellow;
+}
+
+/*last of type Sözde Sınıfı: yine burada da son etiketin değil de, son div etiketini sayfada arar ve arkaplan rengini bisque yapar.*/
+
+div:last-of-type{
+    background-color: bisque;
+}

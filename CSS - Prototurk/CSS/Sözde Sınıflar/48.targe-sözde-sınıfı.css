@@ -1,0 +1,5 @@
+/*link etiketi ile seçilecek olan paragrafın arkaplan rengini değiştirir.*/
+
+p:target{
+    background-color: yellow;
+}

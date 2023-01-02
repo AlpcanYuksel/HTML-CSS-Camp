@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Tablo Etiketleri</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <mark>table ana etiket. thead, tablonun başlık sütunlarını oluşturduğumuz yer. tbody, tablonun içeriklerini oluşturduğumuz yer. tfood is tablonun, coolspan'e verdiğimiz değer ile tablonun sütunlarının birleştirildiği yer. tr; satırları oluşturur, td; sütunları oluşturur. caption tablonun başlığı olarak kullanılır.</mark>
+        <br><br>
+
+        <table border="1">
+            <caption>Aylık Maaşım</caption>
+            <thead>
+                <tr>
+                    <th>Ay</th>
+                    <th>Maaş</th>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ocak</td>
+                    <td>5500₺</td>
+                    <td rowspan="3">Merhaba</td>
+                </tr>
+                <tr>
+                    <td>Şubat</td>
+                    <td>8500₺</td>
+                    
+                </tr>
+                <tr>
+                    <td>Mart</td>
+                    <td>8800₺</td>
+                </tr>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Toplam: 5000₺
+                        </td>
+                    </tr>
+                </tfoot>
+            </tbody>
+            
+        </table>
+
+        <table border="1">
+            <tr>
+                <th rowspan="2">Telefonlar</th>
+            </tr>
+            <tr>
+                <td>555 555 55 55</td>
+            </tr>
+        </table>
+    
+    </body>
+</html>

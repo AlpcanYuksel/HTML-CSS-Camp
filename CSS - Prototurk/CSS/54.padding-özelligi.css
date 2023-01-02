@@ -1,0 +1,31 @@
+/*
+CSS'de en çok kullanılan özelliklerden***
+
+padding: iç boşluk verir
+*/
+
+/*padding-top: yukarıdan boşluk verir
+div {
+    background-color: lime;
+    padding-top: 10px; /*yukarıdan*/
+    /*padding-right: 100px; /*sağdan*/
+    /*padding-bottom: 15px; /*aşağıdan*/
+    /*padding-left: 100px; /*soldan*/
+
+/*}*/
+
+
+/*tek padding özelliği ile de yukarıdaki dört kenara da etki eder. iki değer verirsek ilk değerimiz yukarı ve aşağıta, ikinci değerimiz sola ve sağa etki eder. üç adet kulanırsak ilki yukarıdan, ikincisi solda ve sağdan, üçüncüsü aşağıdan olur* dördüncüyü de yazarsak yukarısı yukarı-sağ-aşağı-sol olur(saat yönünde "↑ → ↓ ←")*/
+div.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 50px 100px 30px 20px;
+}
+
+/*Satırr içi seviyesi (inline) elemanlarda, padding özelliği soldan ve sağdan çalışıyor, ancak yukarıdan ve aşağıdan taşma oluyor ve div etiketinin üstüne biniyor. display özelliği ile ilerde bunu aşacağız*/
+
+span{
+    background-color: tomato;
+    padding: 30px;
+}

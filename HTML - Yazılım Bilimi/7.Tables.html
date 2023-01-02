@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tables</title>
+    
+    <!--style: tabloyu görsel olarak hazırlamamızı sağlar CSS için bilgi. ilerde detaylı işlenecek-->
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    
+    </style>
+
+</head>
+<body>
+<!--table: tablo oluşturmak için açılan etiket.-->
+<!--thead: tablomuzun başlık kısımları bu etiket içine alınır. ilerde CSS düzenlemesinde kolaylık sağlar-->
+<!--tbody: tablomuzun içerik kısımları bu etiket içine alınır. ilerde CSS düzenlemesinde kolaylık sağlar-->
+
+<!--tr(table row): tabloda başlık satırı oluşturur. ikinci ve daha sonra açılan tr ler başlıların altına karşılık gelen alanları yerleştirir-->
+<!--th(table had): Başlıkların kalın yazılmasını sağlar.-->
+<!--td: başlığın altına içerikleri yazmaya yarayan etiket.-->
+
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>    
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            
+                <td>Alp</td>
+                <td>Computer</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>Alp</td>
+                <td>Computer</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>Alp</td>
+                <td>Computer</td>
+                <td>8000</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>

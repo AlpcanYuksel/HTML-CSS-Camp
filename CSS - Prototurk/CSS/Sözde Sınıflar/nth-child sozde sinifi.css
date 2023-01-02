@@ -1,0 +1,61 @@
+
+
+/*nth-child() sözde sınıfı: ul elementinin içerisindeki 3. li elementinin arkaplan rengini mavi yapar. */
+
+ul li:nth-child(3){
+    background-color: blue;
+}
+
+/*Tek sayıdan oluşan öğeleri seçmek için*/
+
+ul li:nth-child(odd){
+    background-color: deepskyblue;
+}
+
+/*Çift sayıdan oluşan öğeleri seçmek için, */
+ul li:nth-child(even){
+    background-color: indianred;
+}
+
+/*ardışık olarak her üçüncü elemanda bir rengini değiştirir*/
+
+ul li:nth-child(3n){
+    background-color: blue;
+}
+
+/*3 elemandan birini boyasın, ancak 2. elemandan başlasın*/
+
+ul li:nth-child(3n+2){
+    background-color: red;
+}
+
+/*5.elemandan (5'de dahil olmak üzere) başlayarak sonraki değerleri boya*/
+
+ul li:nth-child(n+5){
+    background-color: green;
+}
+
+/*Range işlemi, 4 ve 8 arasını seçelim, 4 ve 8 de dahil olmak üzere,*/
+
+ul li:nth-child(n+4):nth-child(-n+8):nth-child(even){
+    background-color: yellow;
+}
+
+
+/*Burada da ebeveyn etiketi ve sırası önemli. Eğer ki 3.li yi seç dersek ve ul etiketi içerisinde 3. etiket şayet li olmaz ise bu durumda css işlemi geçersiz kılınır. Bunun da önüne geçmek için sözde sınıfındaki gibi of-type özelliğini kullanmak;*/
+
+div:nth-of-type(3) {
+    background-color: lightblue;
+}
+
+/*nth last child Sözde Sınıfı: nth:child'ın bütün işlemlerini sondan seçerek yapar.*/
+
+ul li:nth-last-child(1){
+    background-color: red;
+}
+
+/* nth last-of-type :Ebeveyn karmaşası olmaması için*/
+
+div:nth-last-of-type(1){
+    background-color: red;
+}

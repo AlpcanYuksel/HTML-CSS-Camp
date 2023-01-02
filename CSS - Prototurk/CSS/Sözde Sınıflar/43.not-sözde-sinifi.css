@@ -1,0 +1,7 @@
+abbr[title]{
+    background-color: yellow;
+}
+
+abbr:not(.box):not([title]):not(#one){
+    background-color: lime;
+}

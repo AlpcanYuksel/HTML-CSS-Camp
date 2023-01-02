@@ -1,0 +1,9 @@
+/*Ebeveyn içerisinde 1 tane çocuk etiket varsa, o şekilde seçim yapabiliyoruz. ul'nin içerisinde iki tane li var ise, burayı seçemeyiz*/
+
+li:only-child{
+    background-color: yellow;
+}
+
+div:only-child{
+    background-color: green;
+}

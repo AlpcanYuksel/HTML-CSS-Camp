@@ -1,0 +1,28 @@
+/*Form elemanlarının geçerliliğini kontrol eder.*/
+
+
+:focus{
+    outline: none;
+}
+
+/*input required konumundadır. yani içine bir şeyler yazılırsa ancak valid değeri çalışır ve rengini yeşil yapar*/
+input:valid{
+    border-color: rgb(0, 255, 0);
+}
+
+input:valid + span::before{
+    content: '✓';
+    color: rgb(0, 255, 0);
+
+}
+
+
+/*input required konumundadır. Eğer içi doldurulmamışsa dış çerçevesi kırmızı renkte görünür.*/
+input:invalid{
+    border-color: rgb(255, 38, 0);
+}
+
+input:invalid + span::before{
+    content: 'x';
+    color: rgb(255, 38, 0);
+}

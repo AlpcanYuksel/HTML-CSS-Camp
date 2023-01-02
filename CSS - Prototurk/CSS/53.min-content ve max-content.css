@@ -1,0 +1,17 @@
+/*min-content ve max-content: içeriğe göre genişlik ve yükseklik belirlemek için kullanılır*/
+
+/*max content, yazının içeriği ne kadarsa, genişliği de oakadar olur*/
+
+/*min content, yazıdaki kelimeleri tek tek bakıyor ve en geniş kelmeyi seçip, genişliği ona göre atıyor ve kelimeleri  alt alta yazıyor*/
+.box1 {
+    background-color: lime;
+    width: max-content;
+    
+}
+
+.box2{
+    background-color: red;
+    color: white;
+    writing-mode: vertical-rl;
+    height: min-content;
+}
