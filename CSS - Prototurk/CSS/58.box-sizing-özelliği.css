@@ -1,0 +1,19 @@
+/*box-sizing(kutu boyutlandırma): etiketin genişlik ve yüksekliğinin nasıl hesaplanacağını belirtiyoruz. 200 px height ve width değerine sahip bir etikete padding ve margin eklediğimizde height ve width değerleri günelleniyor. box-sizing değeri verdiğimizde, padding ve border değerleri 200px içerisine dahil oluyor ve divin ana boyutu küçülüyor.*/
+
+
+/*uğraşmaya gerek kalmaması için evrensel seçici ile bütün etiketlere bu değeri vermiş oluyoruz.
+padding ve border için box-sizing geçerli, fakat margin dış kenar boşluğu olduğu için kapsamıyor.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    padding: 15px;
+    border: 10px solid wheat;
+
+}

@@ -1,0 +1,53 @@
+/*border-radius: kenarlıklara ovallik vermemize yarayan css özelliğidir.*/
+
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 10px double black ;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+}
+
+
+/*ikili de kullanılabilir: örneğin border-top-left-radius ikili px kullanımında sol üst ve sol-sol ayrı ayrı köşelenir */
+.box2 {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border: 10px double black ;
+
+    border-top-left-radius: 50px 100px;
+
+}
+
+/*tüm köşeleri işlem yapmak için kullanımı tek değer, iki değer girdiğimizde sol üst- sağ alt ve sağ üst-sol alt olarak değerler sırasıyla verilir. 4 değerde sol üstten başlar ve saat yönünde değerler sırasıyla köşelere verilirs*/
+
+.box3 {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border: 10px double black ;
+    border-radius: 50px 100px 80px 200px;
+}
+
+/*width ve height değerlerine eş değer radius verdiğimizde tam bir daire elde ederiz;*/
+.box4{
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border: 10px double black ;
+    border-radius: 300px; /*veya 50%*/
+
+}
+
+/*resimleri de yuvarlak yapabiliyoruz;*/
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 300px; /*veya 50%*/
+
+}
