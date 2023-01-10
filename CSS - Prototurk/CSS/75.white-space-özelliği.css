@@ -1,0 +1,9 @@
+/*white space: sayfadaki metinsel ifadelerin görüntülenme şeklini verir. örneğin yazının tek satırda yazılması (pre) veya etiket içerisine biz nasıl yazdıysak öyle görüntülenmesi (nowrap) gibi.
+pre-wrap, yazdığımız düzeni korur, fakat sayfada enine taşma yapıyorsa, alt satırdan başlar*/
+
+div{
+   /* white-space: nowrap;
+    white-space: pre;
+    white-space: pre-wrap;*/
+    white-space: pre-line;
+}

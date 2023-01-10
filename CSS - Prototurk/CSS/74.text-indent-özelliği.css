@@ -1,0 +1,14 @@
+/*text indent:paragrafın ilk cümlesinde metin boşluğunu ayarlar*/
+
+p:first-child{
+    text-indent: 20px;
+}
+
+/*gerekli durumlarda yazının görüntülenmemesini sağlar.*/
+.button{
+    width: 300px;
+    height: 50px;
+    background-color: lime;
+    text-align: center;
+    text-indent: -9999px;
+}

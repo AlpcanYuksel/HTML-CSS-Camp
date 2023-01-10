@@ -1,0 +1,14 @@
+/*line-height: satır yüsekliğini ayarlamamızı sağlar. Yazı daha okunaklı olur*/
+
+/*
+    1 - 1.5 - 3.5
+    30px 20px
+    100% - 150%
+    1em - 3em
+
+    gibi kullanılabilir
+*/
+
+p{
+    line-height:1.7;
+}

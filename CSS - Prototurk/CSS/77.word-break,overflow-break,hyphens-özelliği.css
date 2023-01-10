@@ -1,0 +1,21 @@
+/*site üzerindeki genelde yorum satırlarında boşluk bırakmadan yazı yazanlar çin kullanılırlar.
+
+    /*word-break: break-all -> bitişik yazılan cümleyi alt satıra geçirir
+
+    overflow-wrap: break-word;
+    hyphens,- atarak bir sonraki satırdan başlıyor, ancak çalışmıyor.
+
+*/
+
+.box{
+    width: 50px;
+    border: 3px solid lime;
+    hyphens: auto;
+}
+
+p:last-of-type{
+    /*word-break: break-all;*/
+    width: 50px;
+    border: 3px solid lime;
+    overflow-wrap: break-word;
+}

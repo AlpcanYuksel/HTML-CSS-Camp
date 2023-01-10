@@ -1,0 +1,25 @@
+/*tüm font özelliklerini, tek bir font ile kullanabiliyoruz*/
+
+/*
+    *gerekli
+    font-size
+    font-family
+
+    *opsiyonel, tanımlanırken font-size'dan önce tanımlanması gerekiyor
+
+    font-style
+    font-variant
+    font-weight
+
+    ** font-size/line height olarak kullanılabilir.
+    line-height
+    
+
+
+1*/
+
+/*sırasıyla style,weight,variant,size/lineHeight, family*/
+
+p {
+    font: italic bold small-caps 20px/3.7 arial;
+}

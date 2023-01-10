@@ -1,0 +1,19 @@
+/*harfler arası mesafeyi ayarlamak iin letter-spacing özelliğini kullanıyoruz*/
+
+h2{
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+/*kelimeler arası mesafeyi kullanmak için word-specing kullanıyoruz. em,rem,px olarak kullanılabilir*/
+
+
+p {
+    font-size: 25px;
+    word-spacing: 50px;
+}
+
+p:last-of-type {
+    word-spacing: normal;
+}
+

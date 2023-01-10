@@ -45,9 +45,8 @@
 
 /*resimleri de yuvarlak yapabiliyoruz;*/
 img{
-    width: 300px;
-    height: 300px;
-    margin-top: 10px;
-    border-radius: 300px; /*veya 50%*/
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; /*veya 50%*/
 
 }

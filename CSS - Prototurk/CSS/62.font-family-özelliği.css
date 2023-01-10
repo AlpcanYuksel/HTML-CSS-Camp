@@ -1,0 +1,21 @@
+/*Yazı tipi ailesi;*/
+
+/*
+    font family;
+
+    serif
+    sans-serif
+    monospace
+    cursive
+    fantasy
+    system-ui
+
+*/
+
+body{
+    font-family: 'Arial, Helvetica, sans-serif';
+}
+
+div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

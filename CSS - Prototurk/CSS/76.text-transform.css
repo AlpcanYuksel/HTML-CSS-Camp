@@ -1,0 +1,13 @@
+/*text-transform: metindeki harflerin tamamı büyük-küçük veya baş harfleri büyük-küçük gibi ayarlamalar yapar
+ uppercase
+ lowercase
+ capitalize
+ none
+*/
+
+p{
+    text-transform: capitalize;
+}
+p:last-child{
+    text-transform: none;
+}

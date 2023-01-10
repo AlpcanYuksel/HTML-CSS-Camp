@@ -4,7 +4,7 @@ div{
 
 /*Sözde öğelerin kullanım alanı, örneğin açılır bir menü var ve üzerinde imleç ile gelindiğinde ok işareti beliriyor.işte bunları sözde öğeler ile yapıyoruz*/
 
-/*After Sözde Öğesi: Div etiketi içerisindeki yazı,etiket vea herhangi bir şeyden sonrasında 'sonraki yazı' sözcüklerini ekrana yazdırır. */
+/*After Sözde Öğesi: Div etiketi içerisindeki yazı,etiket veya herhangi bir şeyden sonrasında 'sonraki yazı' sözcüklerini ekrana yazdırır. */
 
 .div::after{
     content: ' sonraki yazı içeriği';

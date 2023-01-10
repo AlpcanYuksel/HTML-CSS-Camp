@@ -1,0 +1,37 @@
+/*text-decoration, metinlere dekorasyon,süsleme yapmamıza olanak sağlar
+*/
+
+/*
+    line: yazının altını-üstünü veya özerini çizmemizi sağlar.
+    color: çizilen çizgilere renk verir.
+    style: çizilen çizginin şeklini verir.
+*/
+
+div{
+    /*
+    text-decoration-line: overline underline;
+    text-decoration-color:lime;
+    text-decoration-style: wavy;
+
+    hepsini tekli kullanım için text-decoration ile kullanabiliriz.*/
+
+    text-decoration:  underline wavy red ;
+    
+}
+
+
+
+div:last-of-type{
+    text-decoration: none;
+}
+
+h3{
+    text-decoration:  underline wavy lime ;
+
+}
+
+/*böyle kaldırılamaz
+9*/
+h3 span{
+    text-decoration: none;
+}

@@ -1,0 +1,21 @@
+.test{
+    /*
+    color: rgb(65, 180, 143);
+    */
+
+    /*sondaki değer transparan yapar
+    color: rgba(65, 180, 143, .89);
+    */
+
+    /*
+    color: hsl(202, 69%, 52%);
+    */
+    /*
+    color: hsla(202, 69%, 52%, .43);
+    */
+
+    color: #e2113e;
+    
+
+}
+

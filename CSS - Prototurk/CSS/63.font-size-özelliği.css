@@ -1,0 +1,30 @@
+/*Yazı boyutu ayarlamak için kullanılır*/
+
+/*varsayılan yazı tipi boyutu 16px dir*/
+
+/*font size, genelde px ile değer verilir.
+    1em, ebeveyn etiketinin font-size'ına eşittir demek. 
+    2em, ebeveyn etiketinin font-size'ının 2 katı demek.
+    rem, ebeveyn değil de direkt html etiketinin font size'ına bakıyor(en kafa etiket) o da 16px default'tur.
+*/
+
+body{
+    font-size: 30px;
+}
+
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+}
+
+div span{
+    font-size: 1rem;
+}
+
+div em {
+    font-size: 1em;
+}
+
+h6{
+    font-size:25px;
+}
